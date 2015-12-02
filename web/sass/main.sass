@@ -1,22 +1,78 @@
-html, body, body div.pub-pane div.center-panel
-  overflow: visible !important
+body, html, .pub-panel, .content-bar
+  display: block
+  width: auto !important
   height: auto !important
+  overflow: visible !important
+  margin: auto !important
+  border: 0px !important
+  box-shadow: 0px 0px 0px transparent !important
+  border-color: transparent
+div
+  &#pub-body, &.center-panel, &.pub-container, &.body-directive
+    display: block
+    width: auto !important
+    height: auto !important
+    overflow: visible !important
+    margin: auto !important
+    border: 0px !important
+    box-shadow: 0px 0px 0px transparent !important
+    border-color: transparent
+div.center-panel
+  display: block
+  width: auto !important
+  height: auto !important
+  overflow: visible !important
+  margin: auto !important
+  border: 0px !important
+  box-shadow: 0px 0px 0px transparent !important
+  border-color: transparent
 
 
-.pub-pane.i18nCdMx
+@media print
+  html, body
+    height: 99.5%
+
+  .body-directive
+    div
+      &.pub-header
+        width: auto !important
+        display: none
+
+  .salto
+    page-break-after: always
+
+  // El hack del mes
+  %page-break-compatible
+    float: none !important
+    overflow: visible !important
+    border: 0 !important
+  html
+    @extend %page-break-compatible
+    body
+      @extend %page-break-compatible
+      div.pub-pane
+        @extend %page-break-compatible
+        div.center-panel
+          @extend %page-break-compatible
+          div.pub-container
+            @extend %page-break-compatible
+            div.body-directive
+              @extend %page-break-compatible
+              div.highlight-wrapper
+                @extend %page-break-compatible
+                div.highlight-wrapper2
+                  @extend %page-break-compatible
+                  div.pub-body-wrapper
+                    @extend %page-break-compatible
+                    div.pub-body-html.One-Column
+                      @extend %page-break-compatible
+
+
+.pub-pane .i18nCdMx
+  // font-family: Arial !important
+  .logo
+    width: 3.04in
   p
-    &.p1
-      margin: 0
-      min-height: 14.0px
-    &.p2
-      margin: 0
-      text-align: center
-      font: 12.0px Arial
-      min-height: 14.0px
-    &.p3
-      margin: 0
-      font: 12.0px Arial
-      min-height: 14.0px
     &.p4
       margin: 0
       text-align: center
@@ -26,37 +82,11 @@ html, body, body div.pub-pane div.center-panel
       margin: 0
       text-align: center
       font: 16.0px Arial
-    &.p6
-      margin: 0
-      text-align: center
-      font: 16.0px Arial
-      min-height: 18.0px
     &.p7
       margin: 0
       text-align: center
       font: 14.0px Arial
-    &.p8
-      margin: 0
-      text-align: center
-      font: 11.0px Arial
-      min-height: 12.0px
-    &.p9
-      margin: 0
-      font: 11.0px Arial
-      min-height: 12.0px
-    &.p10
-      margin: 0
-      text-align: center
-      font: 10.0px Arial
-      min-height: 11.0px
-    &.p11
-      margin: 0
-      text-align: center
-      font: 10.0px Arial
-    &.p12
-      margin: 0
-      font: 10.0px Arial
-      min-height: 11.0px
+    
     &.p13
       margin: 0
       font: 12.0px Arial

@@ -1,95 +1,14 @@
 = content main
-  p.p1
-    span.s1
-    br
-  p.p1
-    span.s1
-    br
-  p.p1
-    span.s1
-    br
-  p.p2
-    br
-  p.p3
-    br
-  p.p3
-    br
-  p.p3
-    br
-  p.p3
-    br
-  p.p3
-    br
-  p.p2
-    br
-  p.p3
-    br
-  p.p3
-    br
+  img.logo src=img/png/image1.png
   p.p4
     b INTERNACIONALIZACI&#211;N DE LA CIUDAD DE M&#201;XICO:
   p.p5
     b elementos para una pol&#237;tica p&#250;blica
-  p.p6
-    b
-    br
-  p.p6
-    b
-    br
-  p.p6
-    b
-    br
-  p.p6
-    b
-    br
-  p.p6
-    b
-    br
-  p.p6
-    b
-    br
-  p.p6
-    b
-    br
-  p.p6
-    b
-    br
-  p.p6
-    b
-    br
-  p.p6
-    b
-    br
-  p.p6
-    b
-    br
-  p.p6
-    b
-    br
+
   p.p7
-    | octubre
+    | octubre 
     span.s2 2015
-  p.p8
-    br
-  p.p8
-    br
-  p.p8
-    br
-  p.p8
-    br
-  p.p8
-    br
-  p.p8
-    br
-  p.p8
-    br
-  p.p9
-    br
-  p.p10
-    br
-  p.p11
-  p.p12
-    br
+ 
   table.t1 cellspacing=0 cellpadding=0
     tbody
       tr
