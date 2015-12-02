@@ -2,8 +2,11 @@
 html lang=es
   head
     title Internacionalizaci&oacute;n Ciudad de M&eacute;xico
+    link rel=stylesheet href=css/fonts.css
+    link rel=stylesheet href=css/pubpub.min.css
+    link rel=stylesheet href=http://fonts.googleapis.com/css?family=Source+Code+Pro
+    // link rel=stylesheet href=//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css
     link rel=stylesheet href=css/main.css
-    link rel=stylesheet href=//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css
   body
     {{if .isDevelopment}}
       = javascript
@@ -14,8 +17,58 @@ html lang=es
         }).call(this);
     {{end}}
 
-    #container.wrapper
-      = yield main
+    .pub-pane
+      .center-panel
+        .pub-container
+          body-directive
+            .body-directive#body-directive
+              .pub-header.Grey
+                #pub-title.title
+                  h1.ng-binding Your Pub Title
+                .author-string
+                  p.ng-binding
+                    | by 
+                    // ngRepeat: author in authors
+                    span
+                      // ngIf: $last && !($first)
+                      a(href='/user/victor_gonzalez') Victor Gonzalez
+                      // ngIf: !($last)
+                    // end ngRepeat: author in authors
+                // ngIf: peers && peers.length
+              #highlight-wrapper.highlight-wrapper
+                .highlight-wrapper2
+                  // Seems to be a bug in the highlight library, we need this secondary wrapper div
+                  .pub-header.abstract-header.Grey
+                    #pub-abstract.abstract.ng-binding
+                      p Abstract text to describe your pub.
+                  .pub-body-wrapper
+                    .pub-body-html.One-Column
+                      div
+                        .i18nCdMx
+                          = yield main
+                          // h1#headersaremadewith Headers are made with '#'
+                          // p#1
+                          //   | Writing in PubPub uses Markdown. Markdown is wonderfully designed for documents that will eventually be rendered on the web. Perfect!
+                          // p#2 Check out the 'Formatting' bar (to the left) for more formatting features. 
+                          // h2#subheadersuse Subheaders use '##'
+                          // p#4
+                          //   | Our text can be 
+                          //   strong bold
+                          //   |  or 
+                          //   em italic
+                          //   | .
+                          // blockquote
+                          //   p#0 Here is my inspirational quote!
+                          // p#7 What about lists? Yep! We can do that!
+                          // ul
+                          //   li Item 1
+                          //   li Item 2
+                          //   li Item 3
+                          // p#9
+                          //   | More details about markdown can be found 
+                          //   a(href='http://daringfireball.net/projects/markdown/syntax') all over the internet
+                          //   | .
+
 
     script src="js/main.js"
     {{if .isDevelopment}}
