@@ -1,0 +1,11 @@
+{
+  "name": "i18n-cd-mx",
+  "version": "0.1.0",
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ],
+  "dependencies": {
+    "modernizr": "~3.2.0"
+  }
+}

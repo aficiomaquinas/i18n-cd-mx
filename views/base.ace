@@ -1,0 +1,23 @@
+= doctype html
+html lang=es
+  head
+    title Internacionalizaci&oacute;n Ciudad de M&eacute;xico
+    link rel=stylesheet href=css/main.css
+    link rel=stylesheet href=//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css
+  body
+    {{if .isDevelopment}}
+      = javascript
+        (function(){
+          window.i18nCdMx || (window.i18nCdMx = {});
+          i18nCdMx.Environment || (i18nCdMx.Environment = {});
+          i18nCdMx.Environment.isDevelopment = true;
+        }).call(this);
+    {{end}}
+
+    #container.wrapper
+      = yield main
+
+    script src="js/main.js"
+    {{if .isDevelopment}}
+      script src="http://localhost:35729/livereload.js"
+    {{end}}
