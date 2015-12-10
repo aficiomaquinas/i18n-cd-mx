@@ -1,818 +1,133 @@
-/* line 1, ../sass/main.sass */
-body, html, .pub-panel, .content-bar {
-  display: block;
-  width: auto !important;
-  height: auto !important;
-  overflow: visible !important;
-  margin: auto !important;
-  border: 0px !important;
-  box-shadow: 0px 0px 0px transparent !important;
-  border-color: transparent;
+@page {
+  margin: 0.79in 0.79in 0.39in 0.79in;
 }
-
-/* line 11, ../sass/main.sass */
-div#pub-body, div.center-panel, div.pub-container, div.body-directive {
-  display: block;
-  width: auto !important;
-  height: auto !important;
-  overflow: visible !important;
-  margin: auto !important;
-  border: 0px !important;
-  box-shadow: 0px 0px 0px transparent !important;
-  border-color: transparent;
-}
-
-/* line 20, ../sass/main.sass */
-div.center-panel {
-  display: block;
-  width: auto !important;
-  height: auto !important;
-  overflow: visible !important;
-  margin: auto !important;
-  border: 0px !important;
-  box-shadow: 0px 0px 0px transparent !important;
-  border-color: transparent;
-}
-
 @media print {
-  /* line 32, ../sass/main.sass */
+  /* line 34, ../sass/main.sass */
   html, body {
     height: 99.5%;
   }
 
   /* line 37, ../sass/main.sass */
+  .body-directive .pub-body-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* line 46, ../sass/main.sass */
   .body-directive div.pub-header {
     width: auto !important;
     display: none;
   }
 
-  /* line 41, ../sass/main.sass */
-  .salto {
+  /* line 50, ../sass/main.sass */
+  h1.pagebreak {
     page-break-after: always;
   }
+}
+@media print {
+  /* line 50, ../sass/main.sass */
+  h1.pagebreak {
+    visibility: hidden;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+}
 
-  /* line 45, ../sass/main.sass */
+@media print {
+  /* line 61, ../sass/main.sass */
   html, html body, html body div.pub-pane, html body div.pub-pane div.center-panel, html body div.pub-pane div.center-panel div.pub-container, html body div.pub-pane div.center-panel div.pub-container div.body-directive, html body div.pub-pane div.center-panel div.pub-container div.body-directive div.highlight-wrapper, html body div.pub-pane div.center-panel div.pub-container div.body-directive div.highlight-wrapper div.highlight-wrapper2, html body div.pub-pane div.center-panel div.pub-container div.body-directive div.highlight-wrapper div.highlight-wrapper2 div.pub-body-wrapper, html body div.pub-pane div.center-panel div.pub-container div.body-directive div.highlight-wrapper div.highlight-wrapper2 div.pub-body-wrapper div.pub-body-html.One-Column {
     float: none !important;
     overflow: visible !important;
     border: 0 !important;
   }
 }
-/* line 73, ../sass/main.sass */
-.pub-pane .i18nCdMx .logo {
-  width: 3.04in;
+/* line 88, ../sass/main.sass */
+.pub-pane .logo {
+  width: 432px;
+  padding-top: 1in;
+  padding-bottom: 2.1in;
 }
-/* line 76, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p4 {
-  margin: 0;
+/* line 94, ../sass/main.sass */
+.pub-pane .footer-portada {
   text-align: center;
-  font: 16px Arial;
-  color: #e44dd7;
-}
-/* line 81, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p5 {
-  margin: 0;
-  text-align: center;
-  font: 16px Arial;
-}
-/* line 85, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p7 {
-  margin: 0;
-  text-align: center;
-  font: 14px Arial;
-}
-/* line 90, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p13 {
-  margin: 0;
-  font: 12px Arial;
-}
-/* line 93, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p14 {
-  margin: 0;
-  font: 10px Arial;
 }
 /* line 96, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p15 {
-  margin: 0;
-  font: 11px Arial;
+.pub-pane .footer-portada .img-footer {
+  display: inline;
 }
-/* line 99, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p16 {
-  margin: 0;
-  font: 9px Arial;
+/* line 98, ../sass/main.sass */
+.pub-pane .footer-portada .img-1 {
+  height: 0.5in;
+}
+/* line 100, ../sass/main.sass */
+.pub-pane .footer-portada .img-2 {
+  height: 0.7in;
 }
 /* line 102, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p17 {
-  margin: 0;
-  font: 9px Arial;
-  min-height: 10px;
+.pub-pane .footer-portada .img-3 {
+  height: 0.5in;
 }
-/* line 106, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p18 {
-  margin: 0px 28.3px 0px 0px;
-  font: 9px Arial;
-  min-height: 10px;
+/* line 105, ../sass/main.sass */
+.pub-pane p.p7 {
+  padding-top: 3in !important;
+  padding-bottom: 2in !important;
 }
-/* line 110, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p19 {
-  margin: 0;
-  text-align: justify;
-  font: 9px Arial;
+/* line 109, ../sass/main.sass */
+.pub-pane table.tabla-firmantes {
+  width: 100%;
+  margin: 30px 10px !important;
 }
-/* line 114, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p20 {
-  margin: 0px 0px 0px 106.2px;
-  font: 9px Arial;
+/* line 112, ../sass/main.sass */
+.pub-pane table.tabla-firmantes td.td1 {
+  padding: 20px 0 !important;
+  border: none !important;
 }
-/* line 117, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p21 {
-  margin: 0px 0px 0px 35.4px;
-  font: 9px Arial;
+/* line 115, ../sass/main.sass */
+.pub-pane table.tabla-firmantes td.td1 .firmantes {
+  font: 10px Arial !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
 }
-/* line 120, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p22 {
-  margin: 0px 0px 0px 106.2px;
-  font: 9px Arial;
-  min-height: 10px;
+/* line 121, ../sass/main.sass */
+.pub-pane table.tabla-firmantes td.td1 .titulos {
+  font: 18px Arial !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
-/* line 124, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p23 {
-  margin: 0;
-  font: 9px Times;
+/* line 129, ../sass/main.sass */
+.pub-pane .seccion-creditos {
+  margin: 0.1in 0;
 }
-/* line 127, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p24 {
-  margin: 0;
-  font: 9px Times;
-  min-height: 11px;
-}
-/* line 131, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p25 {
-  margin: 0;
-  text-align: center;
-  font: 7px Arial;
+/* line 132, ../sass/main.sass */
+.pub-pane ul.nobullet {
+  list-style-type: none;
+  font-family: Arial;
 }
 /* line 135, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p26 {
+.pub-pane ul.nobullet img.cgcid {
   margin: 0;
-  text-align: center;
-  font: 7px Arial;
-  min-height: 7px;
+  width: 300px;
 }
-/* line 140, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p27 {
+/* line 139, ../sass/main.sass */
+.pub-pane table.t1 {
+  width: 100%;
   margin: 0;
-  font: 10px Arial;
-  color: #f93ef6;
 }
-/* line 144, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p28 {
-  margin: 0;
-  text-align: center;
-  font: 10px Arial;
-  color: #f93ef6;
-  min-height: 11px;
-}
-/* line 150, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p29 {
-  margin: 0;
-  text-align: center;
-  font: 20px Arial;
-  color: #f93ef6;
-}
-/* line 155, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p30 {
-  margin: 0;
-  text-align: center;
-  font: 20px Arial;
-  color: #f93ef6;
-  min-height: 23px;
-}
-/* line 161, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p31 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Arial;
-  min-height: 11px;
-}
-/* line 166, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p32 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Arial;
-  color: #7b1979;
-}
-/* line 171, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p33 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Arial;
-  color: #7b1979;
-  min-height: 11px;
-}
-/* line 177, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p35 {
-  margin: 0;
-  font: 10px Arial;
-  color: #f93ef6;
-  min-height: 11px;
-}
-/* line 182, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p38 {
-  margin: 0;
-  font: 8.5px Times;
-  min-height: 10px;
-}
-/* line 186, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p39 {
-  margin: 0;
-  font: 12px Times;
-}
-/* line 189, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p40 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Arial;
-  color: #f93ef6;
-  min-height: 11px;
-}
-/* line 195, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p41 {
-  margin: 0;
-  text-align: center;
-  font: 9px Arial;
-  color: #e44dd7;
-}
-/* line 200, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p42 {
-  margin: 0;
-  text-align: justify;
-  font: 9px Arial;
-  min-height: 10px;
-}
-/* line 205, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p43 {
-  margin: 0;
-  font: 10px Arial;
-  color: #7b1979;
-}
-/* line 209, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p44 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Arial;
-}
-/* line 213, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p48 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Times;
-}
-/* line 217, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p49 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Arial;
-  color: #000000;
-}
-/* line 222, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p51 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Calibri;
-}
-/* line 226, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p52 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Calibri;
-  min-height: 13px;
-}
-/* line 231, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p54 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Times;
-  min-height: 13px;
-}
-/* line 236, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p55 {
-  margin: 0;
-  text-align: center;
-  font: 9px Arial;
-  color: #e443db;
-}
-/* line 241, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p56 {
-  margin: 0;
-  text-align: center;
-  font: 9px Arial;
-  color: #e443db;
-  min-height: 10px;
-}
-/* line 247, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p57 {
-  margin: 0;
-  text-align: center;
-  font: 9px Arial;
-}
-/* line 251, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p58 {
-  margin: 0;
-  font: 20px Arial;
-  color: #f93ef6;
-  min-height: 23px;
-}
-/* line 256, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p59 {
-  margin: 0px 0px 0px 70.8px;
-  font: 10px Times;
-  color: #ef3fdc;
-}
-/* line 260, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p60 {
-  margin: 0px 0px 0px 70.8px;
-  font: 10px Times;
-}
-/* line 263, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p61 {
-  margin: 0px 0px 0px 106.2px;
-  font: 10px Times;
-  min-height: 13px;
-}
-/* line 267, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p63 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Arial;
-  color: #ef3fdc;
-  min-height: 11px;
-}
-/* line 273, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p64 {
-  margin: 0px 0px 0px 70.8px;
-  font: 10px Times;
-  color: #ef3fdc;
-  min-height: 13px;
-}
-/* line 278, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p65 {
-  margin: 0;
-  font: 10px Times;
-  color: #ef3fdc;
-  min-height: 13px;
-}
-/* line 283, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p67 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Calibri;
-  color: #f93ef6;
-  min-height: 13px;
-}
-/* line 289, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p68 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Arial;
-  color: #f670e5;
-}
-/* line 294, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p69 {
-  margin: 0;
-  font: 10px Times;
-  min-height: 13px;
-}
-/* line 298, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p70 {
-  margin: 0;
-  text-align: center;
-  font: 14px Arial;
-  color: #ed44ed;
-  min-height: 16px;
-}
-/* line 304, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p71 {
-  margin: 0;
-  text-align: center;
-  font: 20px Arial;
-}
-/* line 308, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p72 {
-  margin: 0px 0px 0px 18px;
-  text-align: justify;
-  font: 10px Times;
-  min-height: 13px;
-}
-/* line 313, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p74 {
-  margin: 0;
-  font: 11px Arial;
-  color: #ffffff;
-}
-/* line 317, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p75 {
-  margin: 0;
-  text-align: center;
-  font: 9px Times;
-}
-/* line 321, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p76 {
-  margin: 0;
-  text-align: center;
-  font: 9px Arial;
-  color: #937ab2;
-  min-height: 10px;
-}
-/* line 327, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p77 {
-  margin: 0px 0.1px 0px 0px;
-  text-align: center;
-  font: 9px Arial;
-  color: #937ab2;
-  min-height: 10px;
-}
-/* line 333, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p78 {
-  margin: 0;
-  text-align: center;
-  font: 12px "Arial Narrow";
-  color: #8448b0;
-  min-height: 14px;
-}
-/* line 339, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p79 {
-  margin: 0;
-  text-align: center;
-  font: 11px "Arial Narrow";
-  color: #8448b0;
-  min-height: 12px;
-}
-/* line 345, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p80 {
-  margin: 0;
-  text-align: center;
-  font: 12px "Arial Narrow";
-  color: #937ab2;
-  min-height: 14px;
-}
-/* line 351, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p81 {
-  margin: 0;
-  font: 9px Arial;
-  color: #937ab2;
-  min-height: 10px;
-}
-/* line 356, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p82 {
-  margin: 0;
-  text-align: center;
-  font: 11px "Arial Narrow";
-  min-height: 12px;
-}
-/* line 361, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p83 {
-  margin: 0;
-  text-align: center;
-  font: 9px Arial;
-  min-height: 10px;
-}
-/* line 366, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p84 {
-  margin: 0;
-  text-align: center;
-  font: 12px Arial;
-  color: #8448b0;
-  min-height: 14px;
-}
-/* line 372, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p85 {
-  margin: 0;
-  text-align: center;
-  font: 12px Times;
-  min-height: 14px;
-}
-/* line 377, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p86 {
-  margin: 0;
-  text-align: center;
-  font: 12px Arial;
-  color: #937ab2;
-  min-height: 14px;
-}
-/* line 383, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p87 {
-  margin: 0;
-  text-align: center;
-  font: 11px Arial;
-  color: #ffffff;
-  min-height: 12px;
-}
-/* line 389, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p88 {
-  margin: 0;
-  text-align: center;
-  font: 11px Arial;
-  color: #8448b0;
-  min-height: 12px;
-}
-/* line 395, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p89 {
-  margin: 0;
-  font: 11px Arial;
-  color: #8448b0;
-  min-height: 12px;
-}
-/* line 400, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p90 {
-  margin: 0;
-  font: 12px Times;
-  min-height: 14px;
-}
-/* line 404, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p91 {
-  margin: 0;
-  text-align: center;
-  font: 12px "Arial Narrow";
-  min-height: 14px;
-}
-/* line 409, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p92 {
-  margin: 0;
-  font: 12px "Arial Narrow";
-  color: #937ab2;
-  min-height: 14px;
-}
-/* line 414, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p93 {
-  margin: 0;
-  text-align: justify;
-  font: 12px Times;
-  min-height: 14px;
-}
-/* line 419, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p95 {
-  margin: 0;
-  text-align: center;
-  font: 8px Arial;
-}
-/* line 423, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p96 {
-  margin: 0;
-  text-align: center;
-  font: 8px Arial;
-  color: #ff4eea;
-}
-/* line 428, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p97 {
-  margin: 0;
-  text-align: center;
-  font: 8px Arial;
-  color: #ff4eea;
-  min-height: 9px;
-}
-/* line 434, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p98 {
-  margin: 0;
-  font: 8px Arial;
-  color: #ff4eea;
-  min-height: 9px;
-}
-/* line 439, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p99 {
-  margin: 0px 0px 0px 18px;
-  text-align: center;
-  font: 8px Arial;
-  color: #ff4eea;
-  min-height: 9px;
-}
-/* line 445, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p100 {
-  margin: 0;
-  font: 8px Arial;
-}
-/* line 448, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p101 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Times;
-  color: #ffffff;
-}
-/* line 453, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p102 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Times;
-  color: #ffffff;
-  min-height: 13px;
-}
-/* line 459, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p103 {
-  margin: 0px 0px 0px 18px;
-  font: 9px Times;
-  min-height: 11px;
-}
-/* line 463, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p104 {
-  margin: 0;
-  text-align: justify;
-  font: 9px Times;
-  min-height: 11px;
-}
-/* line 468, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p105 {
-  margin: 0;
-  font: 10px Times;
-  color: #ef3fdc;
-}
-/* line 472, ../sass/main.sass */
-.pub-pane .i18nCdMx p.p106 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Times;
-  color: #ef3fdc;
-  min-height: 13px;
-}
-/* line 480, ../sass/main.sass */
-.pub-pane .i18nCdMx li.li23 {
-  margin: 0;
-  font: 9px Times;
-}
-/* line 483, ../sass/main.sass */
-.pub-pane .i18nCdMx li.li34 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Arial;
-  color: #f93ef6;
-}
-/* line 488, ../sass/main.sass */
-.pub-pane .i18nCdMx li.li36 {
-  margin: 0;
-  text-align: justify;
-  font: 8.5px Calibri;
-}
-/* line 492, ../sass/main.sass */
-.pub-pane .i18nCdMx li.li37 {
-  margin: 0;
-  text-align: justify;
-  font: 8.5px Times;
-}
-/* line 496, ../sass/main.sass */
-.pub-pane .i18nCdMx li.li45 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Calibri;
-  color: #f93ef6;
-}
-/* line 501, ../sass/main.sass */
-.pub-pane .i18nCdMx li.li46 {
-  margin: 0;
-  text-align: right;
-  font: 20px Arial;
-  color: #f93ef6;
-}
-/* line 506, ../sass/main.sass */
-.pub-pane .i18nCdMx li.li47 {
-  margin: 0;
-  text-align: justify;
-  font: 20px Arial;
-  color: #f93ef6;
-  min-height: 23px;
-}
-/* line 512, ../sass/main.sass */
-.pub-pane .i18nCdMx li.li48 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Times;
-}
-/* line 516, ../sass/main.sass */
-.pub-pane .i18nCdMx li.li50 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Times;
-  color: #000000;
-}
-/* line 521, ../sass/main.sass */
-.pub-pane .i18nCdMx li.li51 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Calibri;
-}
-/* line 525, ../sass/main.sass */
-.pub-pane .i18nCdMx li.li53 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Arial;
-  color: #ef3fdc;
-}
-/* line 530, ../sass/main.sass */
-.pub-pane .i18nCdMx li.li62 {
-  margin: 0;
-  font: 10px Calibri;
-  color: #f93ef6;
-}
-/* line 534, ../sass/main.sass */
-.pub-pane .i18nCdMx li.li66 {
-  margin: 0;
-  text-align: justify;
-  font: 10px Times;
-  color: #f93ef6;
-}
-/* line 539, ../sass/main.sass */
-.pub-pane .i18nCdMx li.li73 {
-  margin: 0;
-  font: 10px Times;
-}
-/* line 542, ../sass/main.sass */
-.pub-pane .i18nCdMx li.li75 {
-  margin: 0;
-  text-align: center;
-  font: 9px Times;
-}
-/* line 546, ../sass/main.sass */
-.pub-pane .i18nCdMx li.li94 {
-  margin: 0;
-  font: 8px Calibri;
-}
-/* line 551, ../sass/main.sass */
-.pub-pane .i18nCdMx span.s1 {
-  font: 12px Helvetica;
-}
-/* line 553, ../sass/main.sass */
-.pub-pane .i18nCdMx span.s2 {
-  font: 11px Arial;
-}
-/* line 555, ../sass/main.sass */
-.pub-pane .i18nCdMx span.s3 {
-  font: 8.5px Calibri;
-}
-/* line 557, ../sass/main.sass */
-.pub-pane .i18nCdMx span.s4 {
-  font: 8.5px Times;
-}
-/* line 559, ../sass/main.sass */
-.pub-pane .i18nCdMx span.s5 {
-  font: 10px Calibri;
-  color: #000000;
-}
-/* line 562, ../sass/main.sass */
-.pub-pane .i18nCdMx span.s6 {
-  font: 10px Times;
-  color: #000000;
-}
-/* line 565, ../sass/main.sass */
-.pub-pane .i18nCdMx span.s7 {
-  color: #000000;
-}
-/* line 567, ../sass/main.sass */
-.pub-pane .i18nCdMx span.s8 {
-  color: #ef3fdc;
-}
-/* line 569, ../sass/main.sass */
-.pub-pane .i18nCdMx span.s9 {
-  text-decoration: underline;
-}
-/* line 571, ../sass/main.sass */
-.pub-pane .i18nCdMx span.s10 {
-  font: 11px Calibri;
-}
-/* line 573, ../sass/main.sass */
-.pub-pane .i18nCdMx span.s11 {
-  color: #ff4bfc;
-}
-/* line 575, ../sass/main.sass */
-.pub-pane .i18nCdMx span.s12 {
-  font: 10px Calibri;
-}
-/* line 577, ../sass/main.sass */
-.pub-pane .i18nCdMx span.s13 {
-  font: 10px Times;
-}
-/* line 579, ../sass/main.sass */
-.pub-pane .i18nCdMx span.s14 {
-  color: #ed44ed;
-}
-/* line 581, ../sass/main.sass */
-.pub-pane .i18nCdMx span.s15 {
-  font: 8px "Lucida Grande";
-  color: #2f2f2f;
-}
-/* line 584, ../sass/main.sass */
-.pub-pane .i18nCdMx span.Apple-tab-span {
-  white-space: pre;
-}
-/* line 587, ../sass/main.sass */
-.pub-pane .i18nCdMx table.t1 {
-  border-collapse: collapse;
+/* line 142, ../sass/main.sass */
+.pub-pane table.t1 td.td1 {
+  border: none !important;
+  padding: 0 !important;
 }
-/* line 590, ../sass/main.sass */
-.pub-pane .i18nCdMx td.td1 {
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  border-color: #cbcbcb #cbcbcb #cbcbcb #cbcbcb;
-  padding: 0px 5px 0px 5px;
+/* line 145, ../sass/main.sass */
+.pub-pane table.t1 td.td-siglas {
+  padding: 0 10px !important;
 }
-/* line 596, ../sass/main.sass */
-.pub-pane .i18nCdMx ul.ul1 {
-  list-style-type: disc;
+/* line 147, ../sass/main.sass */
+.pub-pane p.p25 {
+  padding: 0 0 2px 0;
+  font: 15px Arial !important;
 }

@@ -6,7 +6,7 @@ module.exports = (grunt) ->
 		coffeelint:
 			app:
 				files:
-					src: ["web/coffee/main.coffee", "test/test.coffee"]
+					src: ["web/coffee/main.coffee", "test/test.coffee", "web/coffee/pubpub.coffee"]
 				options:
 					configFile: 'coffeelint.json'
 
@@ -64,7 +64,7 @@ module.exports = (grunt) ->
 				options:
 					spawn: true
 					livereload: true
-				files: ["web/**"]
+				files: ["web/**/**"]
 				tasks: ['default']
 
 

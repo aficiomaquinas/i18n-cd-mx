@@ -6,125 +6,75 @@
     b elementos para una pol&#237;tica p&#250;blica
 
   p.p7
-    | octubre 
-    span.s2 2015
- 
-  table.t1 cellspacing=0 cellpadding=0
+    | octubre 2015
+  .wrapper-footer-portada
+    .footer-portada
+      img.img-1.img-footer src=img/png/image3.png
+      img.img-2.img-footer src=img/png/image2.png
+      img.img-3.img-footer src=img/png/image4.png
+  h1.pagebreak
+
+
+  table.tabla-firmantes
     tbody
+      col width=50%
+      col width=50%
       tr
-        td.td1 valign=middle
-          p.p13
-            b miguel &#225;ngel mancera espinosa
-          p.p14 Jefe de Gobierno de la Ciudad de M&#233;xico
-        td.td1 valign=middle
-          p.p13
-            b cuauht&#233;moc c&#225;rdenas sol&#243;rzano
-          p.p14 Coordinador General de Relaciones Internacionales
-          p.p12
-            br
-          p.p12
-            br
-          p.p12
-            br
+        td.td1
+          p.firmantes miguel &#225;ngel mancera espinosa
+          p.titulos Jefe de Gobierno de la Ciudad de M&#233;xico
+        td.td1
+          p.firmantes cuauht&#233;moc c&#225;rdenas sol&#243;rzano
+          p.titulos Coordinador General de Relaciones Internacionales
       tr
-        td.td1 valign=middle
-          p.p15
-            b gabriella g&#243;mez mont
-          p.p14 Directora General Creativa
-          p.p14 Laboratorio para la Ciudad
-          p.p12
-            br
-        td.td1 valign=middle
-          p.p15
-            b eugene d. zapata garesch&#233;
-          p.p14
-            | Coordinador del proyecto AL-LAs
-            span.Apple-converted-space &#160;
-          p.p14 Gobierno del DF&#8211;Uni&#243;n Europea
-          p.p12
-            br
-  p.p12
-    br
-  p.p12
-    br
-  p.p12
-    br
-  p.p12
-    br
-  p.p12
-    br
-  p.p12
-    br
+        td.td1
+          p.firmantes gabriella g&#243;mez mont
+          p.titulos Directora General Creativa
+          p.titulos Laboratorio para la Ciudad
+
+        td.td1
+          p.firmantes eugene d. zapata garesch&#233;
+          p.titulos Coordinador del proyecto AL-LAs
+          p.titulos Gobierno del DF&#8211;Uni&#243;n Europea
+
+
   p.p16 INTERNACIONALIZACI&#211;N DE LA CIUDAD DE M&#201;XICO: elementos para una pol&#237;tica p&#250;blica
-  p.p17
-    br
-  p.p18
-    br
+  
   p.p19
-    | Este documento ha sido realizado por la Coordinaci&#243;n General de Asuntos Internacionales de la Jefatura de Gobierno del Distrito Federal y el Laboratorio para la Ciudad en el marco del proyecto &#8220;AL-LAs&#8221;,
+    | Este documento ha sido realizado por la Coordinaci&#243;n General de Asuntos Internacionales de la Jefatura de Gobierno del Distrito Federal y el Laboratorio para la Ciudad en el marco del proyecto &#8220;AL-LAs&#8221;, 
     i Alianza Euro-latinoamericana de Cooperaci&#243;n entre Ciudades, 
-    | gracias al apoyo financiero de la Uni&#243;n Europea.
-    span.Apple-converted-space &#160; 
-    | Las opiniones expresadas en &#233;l son responsabilidad exclusiva de los autores y no reflejan en modo alguno la posici&#243;n oficial de los socios y colaboradores del proyecto AL-LAs, ni de la Comisi&#243;n Europea, ni de los Estados miembros de la Uni&#243;n Europea.
-  p.p17
-    br
-  p.p17
-    br
-  p.p17
-    br
-  p.p16
-    i Coordinaci&#243;n:
-    span.Apple-tab-span &#9;
-    span.Apple-tab-span &#9;
-    span.Apple-tab-span &#9;
-    | Gabriella G&#243;mez Mont
-  p.p20 Eugene Zapata Garesch&#233;
-  p.p17
-    br
-  p.p17
-    br
-  p.p17
-    br
-  p.p16
-    i Asistencia t&#233;cnica:
-  p.p17
-    i
-    br
-  p.p21
-    i
-      span.Apple-tab-span &#9;
-      span.Apple-tab-span &#9;
-    | Esther Ponce Adame. Directora General
-  p.p22
-    i
-    br
-  p.p17
-    i
-    br
-  p.p17
-    i
-    br
-  p.p16
-    i
-      | Equipo:
-      span.Apple-converted-space &#160;
-  p.p17
-    i
-      span.Apple-tab-span &#9;
-  ul.ul1
-    li.li23 Belinda Amador Leal / Relator&#237;a sobremesas
-    li.li23 Ren&#233; Arg&#252;ellez / Coordinador t&#233;cnico Laboratorio para la Ciudad
-    li.li23 Paola Andrea Arjona Caycedo / Coordinadora t&#233;cnica AL-LAs
-    li.li23 Braulio D&#237;az Castro / Responsable comunicaciones AL-LAs
-    li.li23 Jordy Mel&#233;ndez Y&#250;dico / Coordinaci&#243;n metodol&#243;gica AL-LAs
-    li.li23 Andrea Parra / Asistente t&#233;cnica metodol&#243;gica, CGCID
-    li.li23 Francisco Plasencia / Coordinaci&#243;n entrevistas
-  p.p24
-    br
-  p.p24
-    br
+    |  gracias al apoyo financiero de la Uni&#243;n Europea.
+    |  Las opiniones expresadas en &#233;l son responsabilidad exclusiva de los autores y no reflejan en modo alguno la posici&#243;n oficial de los socios y colaboradores del proyecto AL-LAs, ni de la Comisi&#243;n Europea, ni de los Estados miembros de la Uni&#243;n Europea.
+  .wrapper-creditos
+    .seccion-creditos
+      p.p16
+        i Coordinaci&#243;n:
+      ul.nobullet
+        li Gabriella G&#243;mez Mont
+        li Eugene Zapata Garesch&#233;
+    .seccion-creditos
+      p.p16
+        i Asistencia t&#233;cnica:
+      ul.nobullet
+        li Esther Ponce Adame. Directora General
+        li
+          img.cgcid src=img/png/image8.png
+    .seccion-creditos
+      p.p16
+        i Equipo:
+      ul.ul1
+        li.li23 Belinda Amador Leal / Relator&#237;a sobremesas
+        li.li23 Ren&#233; Arg&#252;ellez / Coordinador t&#233;cnico Laboratorio para la Ciudad6
+        li.li23 Paola Andrea Arjona Caycedo / Coordinadora t&#233;cnica AL-LAs
+        li.li23 Braulio D&#237;az Castro / Responsable comunicaciones AL-LAs
+        li.li23 Jordy Mel&#233;ndez Y&#250;dico / Coordinaci&#243;n metodol&#243;gica AL-LAs
+        li.li23 Andrea Parra / Asistente t&#233;cnica metodol&#243;gica, CGCID
+        li.li23 Francisco Plasencia / Coordinaci&#243;n entrevistas
+
   table.t1 cellspacing=0 cellpadding=0
     tbody
+      col width=50%
+      col width=50%
       tr
         td.td1 valign=middle
           p.p25
@@ -146,177 +96,92 @@
             span.Apple-converted-space &#160; 
             | M&#233;xico.
           p.p25 www.labcd.mx
-  p.p26
-    br
-  p.p27
-    b
-  p.p28
-    b
-    br
+ 
+  h1.pagebreak
+
   p.p29
     b &#205;NDICE
-  p.p30
-    b
-    br
-  p.p30
-    b
-    br
-  p.p30
-    b
-    br
-  p.p13
-    | Resumen Ejecutivo
-    span.Apple-tab-span &#9;
-    | 4
-  p.p3
-    br
-  p.p13
-    | Siglas y abreviaturas
-    span.Apple-tab-span &#9;
-    | 6
-  p.p3
-    br
-  p.p13
-    | Presentaci&#243;n
-    span.Apple-tab-span &#9;
-    | 7
-  p.p3
-    br
-  p.p13
-    | PRIMERA PARTE
-    span.Apple-tab-span &#9;
-    | 8
-  p.p3
-    br
+  
+  p.p13 Resumen Ejecutivo
+  p.p13 Siglas y abreviaturas
+  p.p13 Presentaci&#243;n
+  p.p13 PRIMERA PARTE
   p.p13
     | 1.1
     span.Apple-tab-span &#9;
     | Antecedentes
-    span.Apple-tab-span &#9;
-    | 8
   p.p13
     | 1.2
     span.Apple-tab-span &#9;
     | Di&#225;logos para una CDMX Global
-    span.Apple-tab-span &#9;
-    | 10
   p.p13
     span.Apple-converted-space &#160; &#160; 
     | 1.2.1
     span.Apple-tab-span &#9;
     | Alcances y objetivos
-    span.Apple-tab-span &#9;
-    | 10
   p.p13
     span.Apple-converted-space &#160; &#160; 
     | 1.2.2
     span.Apple-tab-span &#9;
     | Contenido de los Di&#225;logos
-    span.Apple-tab-span &#9;
-    | 11
   p.p13
     span.Apple-converted-space &#160; &#160; 
     | 1.2.3
     span.Apple-tab-span &#9;
     | Fases de los Di&#225;logos
-    span.Apple-tab-span &#9;
-    | 11
   p.p13
     span.Apple-converted-space &#160; &#160; 
     | 1.2.4
     span.Apple-tab-span &#9;
     | Actores consultados
-    span.Apple-tab-span &#9;
-    | 12
-  p.p3
-    br
   p.p13
     | SEGUNDA PARTE
-    span.Apple-tab-span &#9;
-    | 13
-  p.p3
-    br
   p.p13
     | 2.1
     span.Apple-tab-span &#9;
     | Resultados y hallazgos
-    span.Apple-tab-span &#9;
-    | 13
   p.p13
     span.Apple-converted-space &#160; &#160; 
     | 2.1.1
     span.Apple-converted-space &#160; 
     | La CDMX y el mundo: una oportunidad a&#250;n por aprovecharse
-    span.Apple-tab-span &#9;
-    | 13
   p.p13
     span.Apple-converted-space &#160; &#160; 
     | 2.1.2
     span.Apple-converted-space &#160; 
     | Cinco temas prioritarios para la internacionalizaci&#243;n de la CDMX
-    span.Apple-tab-span &#9;
-    | 14
   p.p13
     span.Apple-converted-space &#160; &#160; 
     | 2.1.3 Socios prioritarios para la internacionalizaci&#243;n de la CDMX
-    span.Apple-tab-span &#9;
-    | 16
   p.p13
     span.Apple-converted-space &#160; &#160; 
     | 2.1.4
     span.Apple-converted-space &#160; 
     | Ciudad Planetaria
-    span.Apple-tab-span &#9;
-    | 16
-  p.p3
-    br
   p.p13
     | TERCERA PARTE
-    span.Apple-tab-span &#9;
-    | 18
-  p.p3
-    br
   p.p13
     | 3.1
     span.Apple-tab-span &#9;
     | Recomendaciones para una pol&#237;tica p&#250;blica de internacionalizaci&#243;n de la CDMX
-    span.Apple-tab-span &#9;
-    | 18
-  p.p3
-    br
   p.p13
     | Documentos &#250;tiles
-    span.Apple-tab-span &#9;
-    | 23
-  p.p3
-    br
   p.p13
     | Anexo 1:
     span.Apple-converted-space &#160; 
     | Lista de personas consultadas
-    span.Apple-tab-span &#9;
-    | 24
-  p.p3
-    br
+
   p.p13
     | Anexo 2:
     span.Apple-converted-space &#160; 
     | Frases textuales de entrevistados que ilustran las 5 categor&#237;as de recomendaciones
-    span.Apple-tab-span &#9;
-    | 35
-  p.p3
-    br
   p.p13
     | Anexo 3:
     span.Apple-converted-space &#160; 
     | Muestra de programas internacionales del GDF por ejes prioritarios
-    span.Apple-tab-span &#9;
-    | 40
-  p.p31
-    br
-  p.p32
-  p.p33
-    br
+
+  h1.pagebreak
+
   ul.ul1
     li.li34
       i Resumen Ejecutivo

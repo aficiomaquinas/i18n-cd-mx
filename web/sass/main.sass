@@ -1,36 +1,45 @@
-body, html, .pub-panel, .content-bar
-  display: block
-  width: auto !important
-  height: auto !important
-  overflow: visible !important
-  margin: auto !important
-  border: 0px !important
-  box-shadow: 0px 0px 0px transparent !important
-  border-color: transparent
-div
-  &#pub-body, &.center-panel, &.pub-container, &.body-directive
-    display: block
-    width: auto !important
-    height: auto !important
-    overflow: visible !important
-    margin: auto !important
-    border: 0px !important
-    box-shadow: 0px 0px 0px transparent !important
-    border-color: transparent
-div.center-panel
-  display: block
-  width: auto !important
-  height: auto !important
-  overflow: visible !important
-  margin: auto !important
-  border: 0px !important
-  box-shadow: 0px 0px 0px transparent !important
-  border-color: transparent
+// body, html, .pub-panel, .content-bar
+//   display: block
+//   width: auto !important
+//   height: auto !important
+//   overflow: visible !important
+//   margin: auto !important
+//   border: 0px !important
+//   box-shadow: 0px 0px 0px transparent !important
+//   border-color: transparent
+// div
+//   &#pub-body, &.center-panel, &.pub-container, &.body-directive
+//     display: block
+//     width: auto !important
+//     height: auto !important
+//     overflow: visible !important
+//     margin: auto !important
+//     border: 0px !important
+//     box-shadow: 0px 0px 0px transparent !important
+//     border-color: transparent
+// div.center-panel
+//   display: block
+//   width: auto !important
+//   height: auto !important
+//   overflow: visible !important
+//   margin: auto !important
+//   border: 0px !important
+//   box-shadow: 0px 0px 0px transparent !important
+//   border-color: transparent
 
+@page
+  margin: 0.79in 0.79in 0.39in 0.79in
 
 @media print
   html, body
     height: 99.5%
+
+  .body-directive .pub-body-wrapper
+    // margin: 10px 40px !important
+    // padding: 40px !important
+    // margin: 0.79in 0.79in 0.39in 0.79in !important
+    margin: 0 !important
+    padding: 0 !important
 
   .body-directive
     div
@@ -38,8 +47,15 @@ div.center-panel
         width: auto !important
         display: none
 
-  .salto
+  h1.pagebreak
     page-break-after: always
+    @media print
+      visibility: hidden
+      height: 0 !important
+      margin: 0 !important
+      padding: 0 !important
+      border: 0 !important
+
 
   // El hack del mes
   %page-break-compatible
@@ -68,530 +84,66 @@ div.center-panel
                       @extend %page-break-compatible
 
 
-.pub-pane .i18nCdMx
-  // font-family: Arial !important
+.pub-pane
   .logo
-    width: 3.04in
-  p
-    &.p4
-      margin: 0
-      text-align: center
-      font: 16.0px Arial
-      color: #e44dd7
-    &.p5
-      margin: 0
-      text-align: center
-      font: 16.0px Arial
-    &.p7
-      margin: 0
-      text-align: center
-      font: 14.0px Arial
-    
-    &.p13
-      margin: 0
-      font: 12.0px Arial
-    &.p14
-      margin: 0
-      font: 10.0px Arial
-    &.p15
-      margin: 0
-      font: 11.0px Arial
-    &.p16
-      margin: 0
-      font: 9.0px Arial
-    &.p17
-      margin: 0
-      font: 9.0px Arial
-      min-height: 10.0px
-    &.p18
-      margin: 0.0px 28.3px 0.0px 0.0px
-      font: 9.0px Arial
-      min-height: 10.0px
-    &.p19
-      margin: 0
-      text-align: justify
-      font: 9.0px Arial
-    &.p20
-      margin: 0.0px 0.0px 0.0px 106.2px
-      font: 9.0px Arial
-    &.p21
-      margin: 0.0px 0.0px 0.0px 35.4px
-      font: 9.0px Arial
-    &.p22
-      margin: 0.0px 0.0px 0.0px 106.2px
-      font: 9.0px Arial
-      min-height: 10.0px
-    &.p23
-      margin: 0
-      font: 9.0px Times
-    &.p24
-      margin: 0
-      font: 9.0px Times
-      min-height: 11.0px
-    &.p25
-      margin: 0
-      text-align: center
-      font: 7.0px Arial
-    &.p26
-      margin: 0
-      text-align: center
-      font: 7.0px Arial
-      min-height: 7.0px
-    &.p27
-      margin: 0
-      font: 10.0px Arial
-      color: #f93ef6
-    &.p28
-      margin: 0
-      text-align: center
-      font: 10.0px Arial
-      color: #f93ef6
-      min-height: 11.0px
-    &.p29
-      margin: 0
-      text-align: center
-      font: 20.0px Arial
-      color: #f93ef6
-    &.p30
-      margin: 0
-      text-align: center
-      font: 20.0px Arial
-      color: #f93ef6
-      min-height: 23.0px
-    &.p31
-      margin: 0
-      text-align: justify
-      font: 10.0px Arial
-      min-height: 11.0px
-    &.p32
-      margin: 0
-      text-align: justify
-      font: 10.0px Arial
-      color: #7b1979
-    &.p33
-      margin: 0
-      text-align: justify
-      font: 10.0px Arial
-      color: #7b1979
-      min-height: 11.0px
-    &.p35
-      margin: 0
-      font: 10.0px Arial
-      color: #f93ef6
-      min-height: 11.0px
-    &.p38
-      margin: 0
-      font: 8.5px Times
-      min-height: 10.0px
-    &.p39
-      margin: 0
-      font: 12.0px Times
-    &.p40
-      margin: 0
-      text-align: justify
-      font: 10.0px Arial
-      color: #f93ef6
-      min-height: 11.0px
-    &.p41
-      margin: 0
-      text-align: center
-      font: 9.0px Arial
-      color: #e44dd7
-    &.p42
-      margin: 0
-      text-align: justify
-      font: 9.0px Arial
-      min-height: 10.0px
-    &.p43
-      margin: 0
-      font: 10.0px Arial
-      color: #7b1979
-    &.p44
-      margin: 0
-      text-align: justify
-      font: 10.0px Arial
-    &.p48
-      margin: 0
-      text-align: justify
-      font: 10.0px Times
-    &.p49
-      margin: 0
-      text-align: justify
-      font: 10.0px Arial
-      color: #000000
-    &.p51
-      margin: 0
-      text-align: justify
-      font: 10.0px Calibri
-    &.p52
-      margin: 0
-      text-align: justify
-      font: 10.0px Calibri
-      min-height: 13.0px
-    &.p54
-      margin: 0
-      text-align: justify
-      font: 10.0px Times
-      min-height: 13.0px
-    &.p55
-      margin: 0
-      text-align: center
-      font: 9.0px Arial
-      color: #e443db
-    &.p56
-      margin: 0
-      text-align: center
-      font: 9.0px Arial
-      color: #e443db
-      min-height: 10.0px
-    &.p57
-      margin: 0
-      text-align: center
-      font: 9.0px Arial
-    &.p58
-      margin: 0
-      font: 20.0px Arial
-      color: #f93ef6
-      min-height: 23.0px
-    &.p59
-      margin: 0.0px 0.0px 0.0px 70.8px
-      font: 10.0px Times
-      color: #ef3fdc
-    &.p60
-      margin: 0.0px 0.0px 0.0px 70.8px
-      font: 10.0px Times
-    &.p61
-      margin: 0.0px 0.0px 0.0px 106.2px
-      font: 10.0px Times
-      min-height: 13.0px
-    &.p63
-      margin: 0
-      text-align: justify
-      font: 10.0px Arial
-      color: #ef3fdc
-      min-height: 11.0px
-    &.p64
-      margin: 0.0px 0.0px 0.0px 70.8px
-      font: 10.0px Times
-      color: #ef3fdc
-      min-height: 13.0px
-    &.p65
-      margin: 0
-      font: 10.0px Times
-      color: #ef3fdc
-      min-height: 13.0px
-    &.p67
-      margin: 0
-      text-align: justify
-      font: 10.0px Calibri
-      color: #f93ef6
-      min-height: 13.0px
-    &.p68
-      margin: 0
-      text-align: justify
-      font: 10.0px Arial
-      color: #f670e5
-    &.p69
-      margin: 0
-      font: 10.0px Times
-      min-height: 13.0px
-    &.p70
-      margin: 0
-      text-align: center
-      font: 14.0px Arial
-      color: #ed44ed
-      min-height: 16.0px
-    &.p71
-      margin: 0
-      text-align: center
-      font: 20.0px Arial
-    &.p72
-      margin: 0.0px 0.0px 0.0px 18.0px
-      text-align: justify
-      font: 10.0px Times
-      min-height: 13.0px
-    &.p74
-      margin: 0
-      font: 11.0px Arial
-      color: #ffffff
-    &.p75
-      margin: 0
-      text-align: center
-      font: 9.0px Times
-    &.p76
-      margin: 0
-      text-align: center
-      font: 9.0px Arial
-      color: #937ab2
-      min-height: 10.0px
-    &.p77
-      margin: 0.0px 0.1px 0.0px 0.0px
-      text-align: center
-      font: 9.0px Arial
-      color: #937ab2
-      min-height: 10.0px
-    &.p78
-      margin: 0
-      text-align: center
-      font: 12.0px 'Arial Narrow'
-      color: #8448b0
-      min-height: 14.0px
-    &.p79
-      margin: 0
-      text-align: center
-      font: 11.0px 'Arial Narrow'
-      color: #8448b0
-      min-height: 12.0px
-    &.p80
-      margin: 0
-      text-align: center
-      font: 12.0px 'Arial Narrow'
-      color: #937ab2
-      min-height: 14.0px
-    &.p81
-      margin: 0
-      font: 9.0px Arial
-      color: #937ab2
-      min-height: 10.0px
-    &.p82
-      margin: 0
-      text-align: center
-      font: 11.0px 'Arial Narrow'
-      min-height: 12.0px
-    &.p83
-      margin: 0
-      text-align: center
-      font: 9.0px Arial
-      min-height: 10.0px
-    &.p84
-      margin: 0
-      text-align: center
-      font: 12.0px Arial
-      color: #8448b0
-      min-height: 14.0px
-    &.p85
-      margin: 0
-      text-align: center
-      font: 12.0px Times
-      min-height: 14.0px
-    &.p86
-      margin: 0
-      text-align: center
-      font: 12.0px Arial
-      color: #937ab2
-      min-height: 14.0px
-    &.p87
-      margin: 0
-      text-align: center
-      font: 11.0px Arial
-      color: #ffffff
-      min-height: 12.0px
-    &.p88
-      margin: 0
-      text-align: center
-      font: 11.0px Arial
-      color: #8448b0
-      min-height: 12.0px
-    &.p89
-      margin: 0
-      font: 11.0px Arial
-      color: #8448b0
-      min-height: 12.0px
-    &.p90
-      margin: 0
-      font: 12.0px Times
-      min-height: 14.0px
-    &.p91
-      margin: 0
-      text-align: center
-      font: 12.0px 'Arial Narrow'
-      min-height: 14.0px
-    &.p92
-      margin: 0
-      font: 12.0px 'Arial Narrow'
-      color: #937ab2
-      min-height: 14.0px
-    &.p93
-      margin: 0
-      text-align: justify
-      font: 12.0px Times
-      min-height: 14.0px
-    &.p95
-      margin: 0
-      text-align: center
-      font: 8.0px Arial
-    &.p96
-      margin: 0
-      text-align: center
-      font: 8.0px Arial
-      color: #ff4eea
-    &.p97
-      margin: 0
-      text-align: center
-      font: 8.0px Arial
-      color: #ff4eea
-      min-height: 9.0px
-    &.p98
-      margin: 0
-      font: 8.0px Arial
-      color: #ff4eea
-      min-height: 9.0px
-    &.p99
-      margin: 0.0px 0.0px 0.0px 18.0px
-      text-align: center
-      font: 8.0px Arial
-      color: #ff4eea
-      min-height: 9.0px
-    &.p100
-      margin: 0
-      font: 8.0px Arial
-    &.p101
-      margin: 0
-      text-align: justify
-      font: 10.0px Times
-      color: #ffffff
-    &.p102
-      margin: 0
-      text-align: justify
-      font: 10.0px Times
-      color: #ffffff
-      min-height: 13.0px
-    &.p103
-      margin: 0.0px 0.0px 0.0px 18.0px
-      font: 9.0px Times
-      min-height: 11.0px
-    &.p104
-      margin: 0
-      text-align: justify
-      font: 9.0px Times
-      min-height: 11.0px
-    &.p105
-      margin: 0
-      font: 10.0px Times
-      color: #ef3fdc
-    &.p106
-      margin: 0
-      text-align: justify
-      font: 10.0px Times
-      color: #ef3fdc
-      min-height: 13.0px
+    // width: 3.5in
+    width: 432px
+    padding-top: 1in
+    padding-bottom: 2.1in
 
-  li
-    &.li23
-      margin: 0
-      font: 9.0px Times
-    &.li34
-      margin: 0
-      text-align: justify
-      font: 10.0px Arial
-      color: #f93ef6
-    &.li36
-      margin: 0
-      text-align: justify
-      font: 8.5px Calibri
-    &.li37
-      margin: 0
-      text-align: justify
-      font: 8.5px Times
-    &.li45
-      margin: 0
-      text-align: justify
-      font: 10.0px Calibri
-      color: #f93ef6
-    &.li46
-      margin: 0
-      text-align: right
-      font: 20.0px Arial
-      color: #f93ef6
-    &.li47
-      margin: 0
-      text-align: justify
-      font: 20.0px Arial
-      color: #f93ef6
-      min-height: 23.0px
-    &.li48
-      margin: 0
-      text-align: justify
-      font: 10.0px Times
-    &.li50
-      margin: 0
-      text-align: justify
-      font: 10.0px Times
-      color: #000000
-    &.li51
-      margin: 0
-      text-align: justify
-      font: 10.0px Calibri
-    &.li53
-      margin: 0
-      text-align: justify
-      font: 10.0px Arial
-      color: #ef3fdc
-    &.li62
-      margin: 0
-      font: 10.0px Calibri
-      color: #f93ef6
-    &.li66
-      margin: 0
-      text-align: justify
-      font: 10.0px Times
-      color: #f93ef6
-    &.li73
-      margin: 0
-      font: 10.0px Times
-    &.li75
-      margin: 0
-      text-align: center
-      font: 9.0px Times
-    &.li94
-      margin: 0
-      font: 8.0px Calibri
+  .footer-portada
+    text-align: center
+    .img-footer
+      display: inline
+    .img-1
+      height: .5in
+    .img-2
+      height: .7in
+    .img-3
+      height: .5in
 
-  span
-    &.s1
-      font: 12.0px Helvetica
-    &.s2
-      font: 11.0px Arial
-    &.s3
-      font: 8.5px Calibri
-    &.s4
-      font: 8.5px Times
-    &.s5
-      font: 10.0px Calibri
-      color: #000000
-    &.s6
-      font: 10.0px Times
-      color: #000000
-    &.s7
-      color: #000000
-    &.s8
-      color: #ef3fdc
-    &.s9
-      text-decoration: underline
-    &.s10
-      font: 11.0px Calibri
-    &.s11
-      color: #ff4bfc
-    &.s12
-      font: 10.0px Calibri
-    &.s13
-      font: 10.0px Times
-    &.s14
-      color: #ed44ed
-    &.s15
-      font: 8.0px 'Lucida Grande'
-      color: #2f2f2f
-    &.Apple-tab-span
-      white-space: pre
+  p.p7
+    padding-top: 3in !important
+    padding-bottom: 2in !important
+
+  table.tabla-firmantes
+    width: 100%
+    margin: 30px 10px !important
+    td.td1
+      padding: 20px 0  !important
+      border: none !important
+      .firmantes
+        font: 10.0px Arial  !important
+        padding: 0  !important
+        margin: 0  !important
+        font-weight: bold  !important
+        text-transform: uppercase !important
+      .titulos
+        font: 18px Arial !important
+        padding: 0 !important
+        margin: 0 !important
+  // .wrapper-creditos
+  //   &:last-child
+  //     margin-bottom: 0
+
+  .seccion-creditos
+    margin: .1in 0
+
+  ul.nobullet
+    list-style-type: none
+    font-family: Arial
+    img.cgcid
+      margin: 0
+      width: 300px
 
   table.t1
-    border-collapse: collapse
-
-  td.td1
-    border-style: solid
-    border-width: 1.0px 1.0px 1.0px 1.0px
-    border-color: #cbcbcb #cbcbcb #cbcbcb #cbcbcb
-    padding: 0.0px 5.0px 0.0px 5.0px
-
-  ul.ul1
-    list-style-type: disc
+    width: 100%
+    margin: 0
+    td.td1
+      border: none !important
+      padding: 0 !important
+    td.td-siglas
+      padding: 0 10px !important
+  p.p25
+    padding: 0 0 2px 0
+    font: 15.0px Arial !important
